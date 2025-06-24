@@ -11,8 +11,8 @@ class PriceDataGenerator {
 
         this.poolAddresses = [
             "0x123abc456def789012345678901234567890abcd",
-            "0x456def789abc012345678901234567890abcdef",
-            "0x789abc123def456789012345678901234567890"
+            "0x123abc456def789012345678901234567890abcd",
+            "0x123abc456def789012345678901234567890abcd"
         ];
     }
 
@@ -81,7 +81,7 @@ class PriceDataGenerator {
         console.log("Finished inserting test data");
     }
 
-    async insertHistoricalData(count = 50) {
+    async insertHistoricalData(count = 120) {
         await client.connect();
         const collection = client.db().collection("priceHistory");
 

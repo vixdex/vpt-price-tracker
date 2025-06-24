@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
+    "mockStart": "node src/mockIndex.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

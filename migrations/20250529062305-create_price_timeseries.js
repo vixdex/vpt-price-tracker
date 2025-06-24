@@ -20,7 +20,6 @@ module.exports = {
         key: { "meta.originalPoolId": 1, "timestamp": 1 }, 
         name: "originalPoolId_timestamp_idx" 
       }
-      // REMOVED: tokenSymbol index (not used anymore)
     ]);
 
     // Optional: TTL index for automatic data cleanup after 90 days

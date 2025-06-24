@@ -20,9 +20,9 @@ async function verifyEventEmission() {
     
     // Contract addresses (update these with your actual deployed addresses)
     const contractAddresses = {
-        8545: "0x9A676e781A523b5d0C0e43731313A708CB607508",  // Ethereum
-        8546: "NEW_POLYGON_ADDRESS",                         // Polygon (update after deployment)
-        8547: "0x610178dA211FEF7D417bC0e6FeD39F05609AD788"   // Arbitrum
+        8545: "0x5FbDB2315678afecb367f032d93F642f64180aa3",  // Ethereum
+        8546: "0x5FbDB2315678afecb367f032d93F642f64180aa3",                         // Polygon (update after deployment)
+        8547: "0x5FbDB2315678afecb367f032d93F642f64180aa3"   // Arbitrum
     };
     
     for (const chain of chains) {
@@ -182,7 +182,7 @@ async function stressTestEvents() {
     console.log("-".repeat(50));
     
     const contractAddresses = {
-        8545: "0x9A676e781A523b5d0C0e43731313A708CB607508"  // Use your working Ethereum address
+        8545: "0x5FbDB2315678afecb367f032d93F642f64180aa3"  // Use your working Ethereum address
     };
     
     try {
@@ -205,7 +205,7 @@ async function stressTestEvents() {
             const tx = await contract.simulateSwap(
                 "0x123abc456def789012345678901234567890abcd",
                 ethers.parseUnits((15 + i).toString(), 18),
-                ethers.parseUnits((2000 + i * 100).toString(), 18),
+                ethers.parseUnits((6000 + i * 100).toString(), 18),
                 ethers.parseUnits((1500 + i * 50).toString(), 18),
                 {
                     nonce: nonce + i,  // Manual nonce management
